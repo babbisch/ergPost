@@ -1,0 +1,9 @@
+Nach dem Download im ergpost-Verzeichnis die Datei ergpost_install.php aufrufen.
+Zur Befüllung der ligen.ini kann ergpost_ligaadmin.php aufgerufen werden.
+
+Generell:
+---------
+- Rechte an Verzeichnissen und Dateien müssen momentan noch manuell vergeben werden.
+  Dateien: ligen.ini -> CHMOD 666
+  Directories: copysave, ligen, spiele, spieler, vereine -> CHMOD 777
+

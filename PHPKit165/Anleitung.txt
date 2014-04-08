@@ -1,0 +1,58 @@
+Name:		Ergpost Adaption f?r PHPKIT 1.6.5
+Datum:		02-08-2010
+Author: 	DwB
+
+
+---------------------------------------------------------------------------------------------------
+INSTAL 
+---------------------------------------------------------------------------------------------------
+
+Der Unterschied besteht jetzt darin, das dieses Script komplett in das PHPKIT integriert wurde! Es läuft also nicht über ein Iframe 
+oder eine gesonderte Seite!
+Das LMO Script installiert Ihr ganz normal wie in der LMO Anleitung beschrieben. Dabei ist der LMO im Ordner plinc/public/lmo zu installieren.
+Alles was mit dem Ergpost zu tun hat wird in dieser Aleitung dokumentiert. Die Dateien liegen nun alle unter 
+
+pkinc/public/ergpost/
+pkinc/public/lmo/				<- hier zunächst den LMO installieren, im Anschluss mit den Dateien aus ergPost überschreiben
+pkinc/public/php/
+pkinc/public/ergpost.php
+pkinc/public/berichte.php
+pkinc/public/trainer.php
+
+
+1. Lade alle Ordner unter Beibehaltung der Ordnerstruktur hoch 
+2. Ändere nun folgende Datei nur, falls dort bereits eigene Änderungen vorgenommen wurden, ansonsten die Datei aus dem Package nutzen
+
+/pkinc/main.php
+
+
+=======================================================================
+
+/pkinc/main.php
+
+Suche:
+
+define('pkDIRREP',pkDIRINC.'rep/');
+
+F?ge darunter ein:
+
+#ERGpost PHP FILES
+define('pkPUBLICPHP',pkDIRINC.'public/php/');
+define('pkPUBLICERGPOST',pkDIRINC.'public/ergpost/');
+define('pkPUBLICLMO',pkDIRINC.'public/lmo/');
+
+=======================================================================
+
+
+Einbindung:
+
+Erstellen Sie einen Navbox Link und geben Sie als Link ?path=ergpost an
+
+
+Aufgerufen werden die Bereiche über folgende Links:
+
+include.php?path=ergpost
+include.php?path=berichte
+include.php?path=trainer
+
+Eine NavBox lastresults gibt es auch bereits, hier ist die eigene URL einzutragen anstelle des vorhandenen Strings 'url'

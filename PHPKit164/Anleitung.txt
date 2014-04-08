@@ -1,0 +1,72 @@
+Name:		Ergpost Adaption für PHPKIT 1.6.4PL3
+Datum:		26-06-2009
+Author: 	Crack
+Homepage:	www.kit-coding.de
+Email: 		Info@kit-coding.de
+
+
+---------------------------------------------------------------------------------------------------
+INSTAL 
+---------------------------------------------------------------------------------------------------
+
+Der Unterschied besteht jetzt darin, das dieses Script komplett in das PHPKIT integriert wurde! Es läuft also nicht über ein Iframe oder eine gesonderte Seite!
+Das LMO Script installiert Ihr ganz normal wie in der LMO Anleitung beschrieben. Alles was mit dem Ergpost zu tun hat ist diese Anleitung hier für zuständig. Da ich jetzt nicht auswendig weiß,
+welche Ordner alle Schreibrechte brauchen sucht Euch das bitte aus den originalen Anleitungen heraus und vergebt die Rechte den Einzelnen Ordnern wie es gewünscht wird. Denkt aber dran, das es im PHPKIT nicht notwendig ist, das 
+das Ergpost Script(Ordner) im Main Verzeichnis liegt, wo auch die Include ist. DIESEN BRAUCHT IHR NICHT MEHR! Die Dateien liegen nun alle unter 
+
+pkinc/public/ergpost/
+pkinc/public/lmo/
+pkinc/public/php/
+pkinc/public/ergpost.php
+pkinc/public/berichte.php
+pkinc/public/trainer.php
+
+Die Config Datei editiert Ihr bitte dann auch noch nach originaler Anleitung, nur denkt dran, die liegt dann hier -> pkinc/public/ergpost/config.dh.inc
+
+
+1. Lade alle Ordner unter Beibehaltung der Ordnerstruktur hoch (Außer der Anleitung.txt). Dabei werden keine Dateien überschrieben ;), es sei denn Sie machen ein Update.
+2. Ändere nun folgende Datei 
+
+/pkinc/main.php
+
+
+Einbindung:
+
+Erstellen Sie einen Navbox Link und geben Sie als Link ?path=ergpost an
+
+
+Aufgerufen werden die Bereiche über folgende Links:
+
+include.php?path=ergpost
+include.php?path=berichte
+include.php?path=trainer
+
+=======================================================================
+
+/pkinc/main.php
+
+Suche:
+
+define('pkDIRREP',pkDIRINC.'rep/');
+
+Füge darunter ein:
+
+#ERGpost PHP FILES
+define('pkPUBLICPHP',pkDIRINC.'public/php/');
+define('pkPUBLICERGPOST',pkDIRINC.'public/ergpost/');
+define('pkPUBLICLMO',pkDIRINC.'public/lmo/');
+
+=======================================================================
+
+Das war es auch schon.
+
+Juhu
+
+
+Support:
+============================
+
+Support & Fragen: 
+
+Support gebe ich gerne im FORUM unter www.kit-coding.de 
+PNS oder ICQ werden gnadenlos ignoriert!!!
