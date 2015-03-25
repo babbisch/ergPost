@@ -1,7 +1,0 @@
-bl_2009-10.l98;1;1;VfL Wolfsburg;VfB Stuttgart;admin;;2;0;BuLi
-bl_2009-10.l98;7;1;VfL Wolfsburg;Hannover 96;admin;;4;2;BuLi
-bl_2009-10.l98;27;2;VfL Wolfsburg;Hertha BSC Berlin;admin;;1;1;BuLi
-bl_2009-10.l98;29;3;VfL Wolfsburg;1899 Hoffenheim;admin;;0;0;BuLi
-bl_2009-10.l98;28;1;FSV Mainz 05;VfL Wolfsburg;;admin;1;0;buli
-bl_2009-10.l98;24;1;Hannover 96;VfL Wolfsburg;;admin;0;0;buli
-bl_2009-10.l98;8;7;VfL Bochum;VfL Wolfsburg;;admin;1;1;buli
