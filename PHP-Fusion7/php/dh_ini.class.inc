@@ -115,7 +115,7 @@ class DH_INI
     
     // - Schreibt Datensatz in aktuellen INI-Array
     function write_data_c($section,$item,$value,$change=TRUE,$create=TRUE){
-      return $this->write_data(&$this->current,$section,$item,$value,$change,$create);
+      return $this->write_data($this->current,$section,$item,$value,$change,$create);
     }
     
     // - Schreibt Daten aus Array (wie es get_data ausgibt) in den aktuellen INI-Array - Gibt Anzahl geänderter und geschriebener Datensätze zurück

@@ -44,7 +44,8 @@ define("_APPEND_", "a+b");
 //by derhasi: Reading via Array, usefull for multiple Data research
 //Addition to myinifunctions by Tom Gries - tom@xsurf.net - http://sourceforge.net/projects/myinifunctions/.*/
 
-include_once("dh_func.init.inc");
+$dir = dirname(__file__);
+include_once("$dir/dh_func.init.inc");
 
 /*CLASS DH_INI
 #########################################################################*/
@@ -114,7 +115,7 @@ class DH_INI
     
     // - Schreibt Datensatz in aktuellen INI-Array
     function write_data_c($section,$item,$value,$change=TRUE,$create=TRUE){
-      return $this->write_data(&$this->current,$section,$item,$value,$change,$create);
+      return $this->write_data($this->current,$section,$item,$value,$change,$create);
     }
     
     // - Schreibt Daten aus Array (wie es get_data ausgibt) in den aktuellen INI-Array - Gibt Anzahl geänderter und geschriebener Datensätze zurück
