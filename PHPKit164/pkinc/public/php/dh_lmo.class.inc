@@ -1,13 +1,14 @@
 <?php
 
-include_once("dh_ini.class.inc");
+$dir = dirname(__file__);
+include_once("$dir/dh_ini.class.inc");
 
 class DH_LMO extends DH_INI
 {
   var $games = array();
   var $game = array();
 
-   function DH_LMO($datei){
+   function __constructor($datei){
      $this->DH_INI($datei);
    }
    
