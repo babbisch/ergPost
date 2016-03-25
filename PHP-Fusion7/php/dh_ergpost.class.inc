@@ -109,7 +109,7 @@ class DH_ERGPOST extends DH_LMO
   var $formular = '';
 
 //##################################
-  function __constructor($username){
+  function DH_ERGPOST($username){
     //Auswahl Liga in ergpostdh.inc
     //Auswahl Spieltag ergpost.dh.inc
     //$this->topic_id=$topic_id;

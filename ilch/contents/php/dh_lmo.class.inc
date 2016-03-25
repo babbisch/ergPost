@@ -8,7 +8,7 @@ class DH_LMO extends DH_INI
   var $games = array();
   var $game = array();
 
-   function __constructor($datei){
+   function DH_LMO($datei){
      $this->DH_INI($datei);
    }
    

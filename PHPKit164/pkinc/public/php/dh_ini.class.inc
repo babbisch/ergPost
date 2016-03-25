@@ -61,7 +61,7 @@ class DH_INI
     
 //####### FUNKTIONEN die Klassenvariablen verändern #############
     // - Constructor
-    function __constructor($inifile){
+    function DH_INI($inifile){
       if ($this->file == ''){
         if (is_file($inifile)) {
           $this->file = $inifile;
