@@ -1,4 +1,4 @@
-Nach dem Download im ergpost-Verzeichnis die Datei ergpost_install.php aufrufen.
+Nach dem Download im ergpost-Verzeichnis die Datei ergpost_install.php aufrufen. 
 Zur Befüllung der ligen.ini kann ergpost_ligaadmin.php aufgerufen werden.
 
 Generell:
